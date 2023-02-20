@@ -30,7 +30,7 @@
                     </tr>
                     <tr>
                         <td align="right"><input type="submit" name="submit" value="submit"></td>
-                        <td><a href="forgetPassword.php">Forget Password?</a></td>
+                        <td><a href="changePassword.php">Forget Password?</a></td>
                     </tr>
                 </table>
             </fieldset>
