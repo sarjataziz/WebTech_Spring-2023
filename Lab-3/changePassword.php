@@ -12,7 +12,7 @@
     <center>
         <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
             <fieldset>
-                <h1>Login to Website</h1><br>
+                <h1>Change Your Password</h1><br>
                 <table>
                     <tr>
                         <td><label for="current_password">Current Password: </label></td>
