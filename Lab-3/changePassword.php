@@ -15,16 +15,16 @@
                 <h1>Login to Website</h1><br>
                 <table>
                     <tr>
-                        <td><label for="username">Username: </label></td>
-                        <td><input type="text" name="username" required><br></td>
+                        <td><label for="current_password">Current Password: </label></td>
+                        <td><input type="text" name="current_password" required><br></td>
                     </tr>
                     <tr>
-                        <td><label for="password">Old Password: </label></td>
-                        <td><input type="text" name="password" required><br></td>
+                        <td><label for="new_password">New Password: </label></td>
+                        <td><input type="text" name="new_password" required><br></td>
                     </tr>
                     <tr>
-                        <td><label for="password">New Password: </label></td>
-                        <td><input type="text" name="password" required><br></td>
+                        <td><label for="retype_password">Retype Password: </label></td>
+                        <td><input type="text" name="retype_password" required><br></td>
                     </tr>
                     <tr>
                         <td align="right"><input type="submit" name="submit" value="submit"></td>
