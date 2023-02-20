@@ -1,25 +1,32 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Form</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+    body {
+        background-color: lightblue;
+    }
+    </style>
+    <title>Form</title>
+</head>
+
 <body>
     <center>
         <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
-        <fieldset>
-            <h1>Personal Info</h1><br>
-            <label for="fname">Name: </label>
-            <input type="text" name="fname">
-            <br>
-            <label for="email">Email: </label>
-            <input type="text" name="email">
-            <br>
-            <br>
-            <label for="dateOfBirth">Date Of Birth: </label>
-            <input type="text" name="dateOfBirth" placeholder="Day/Month/Year" required>
-            <br>
-            <label for="gender">Gender:</label>
+            <fieldset>
+                <h1>Personal Info</h1><br>
+                <label for="fname">Name: </label>
+                <input type="text" name="fname">
+                <br>
+                <label for="email">Email: </label>
+                <input type="text" name="email">
+                <br>
+                <br>
+                <label for="dateOfBirth">Date Of Birth: </label>
+                <input type="text" name="dateOfBirth" placeholder="Day/Month/Year" required>
+                <br>
+                <label for="gender">Gender:</label>
                 <input type="radio" id="male" name="gender" value="Male" required>
                 <label for="male">Male</label>
                 <input type="radio" id="female" name="gender" value="Female" required>
@@ -27,18 +34,18 @@
                 <input type="radio" id="other" name="gender" value="Other" required>
                 <label for="other">Other</label>
                 <br>
-            <label>Degree: </label>
-            <input type="checkbox" id="SSC" name="SSC" value="SSC">
-            <label for="SSC"> SSC</label><br>
-            <input type="checkbox" id="HSC" name="HSC" value="HSC">
-            <label for="HSC"> HSC</label><br>
-            <input type="checkbox" id="BSc" name="BSc" value="BSc">
-            <label for="BSc"> BSc</label>
-            <input type="checkbox" id="MSc" name="MSc" value="MSc">
-            <label for="MSc"> MSc</label>
-            <br>
-            <br>
-            <label for="blood-group">Blood Group:</label>
+                <label>Degree: </label>
+                <input type="checkbox" id="SSC" name="SSC" value="SSC">
+                <label for="SSC"> SSC</label><br>
+                <input type="checkbox" id="HSC" name="HSC" value="HSC">
+                <label for="HSC"> HSC</label><br>
+                <input type="checkbox" id="BSc" name="BSc" value="BSc">
+                <label for="BSc"> BSc</label>
+                <input type="checkbox" id="MSc" name="MSc" value="MSc">
+                <label for="MSc"> MSc</label>
+                <br>
+                <br>
+                <label for="blood-group">Blood Group:</label>
                 <select id="blood-group" name="blood-group" required>
                     <option value="" disabled selected> Select Your Option </option>
                     <option value="AB">AB </option>
@@ -50,10 +57,10 @@
                 <br>
                 <label for="comment">Comment:</label>
                 <textarea id="comment" name="comment" required></textarea>
-            <br>
-            <br>
-            <input type="submit">
-        </fieldset> 
+                <br>
+                <br>
+                <input type="submit">
+            </fieldset>
         </form>
         <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -133,4 +140,5 @@
         ?>
     </center>
 </body>
+
 </html>
