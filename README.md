@@ -28,5 +28,5 @@ Part-2 <br>
   
 <br/>  
 
-## Authors
+## Author
 - [@sarjataziz](https://github.com/sarjataziz)
