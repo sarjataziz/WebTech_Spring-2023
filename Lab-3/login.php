@@ -10,7 +10,7 @@
 
 <body>
     <center>
-        <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+        <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
             <fieldset>
                 <h1>Login to Website</h1><br>
                 <table>
@@ -29,7 +29,9 @@
                         </td>
                     </tr>
                     <tr>
-                        <td align="right"><input type="submit" name="submit" value="submit"></td>
+                        <td align="right">
+                            <a href="load.php"> <input type="submit" name="submit" value="submit"></a>
+                        </td>
                         <td><a href="changePassword.php">Forget Password?</a></td>
                     </tr>
                 </table>
@@ -37,19 +39,31 @@
         </form>
     </center>
     <?php
-            if(isset($_POST["submit"]))
-            {
-                $user_name = $_POST["username"];
-                $user_password = $_POST["password"];
-                if(($user_name =="Username" && $$user_password == "123"))
-                {
-                    echo "";
-                }
-                else{
-                    echo "Incorrect Username and Password.";
-                }
+    $nameError = $passwordError = "";
+    $username = $password = "";
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        if (empty($_POST["username"])) {
+            $usernameError = "Username is required";
+        } else {
+            $username = ($_POST["username"]);
+            if (!preg_match("/^[a-zA-Z-' ]*.{2,30}$/", $username)) {
+                $usernameError = "Only letters and white space allowed with at least 2 characters";
             }
-            ?>
+        }
+    }
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        if (empty($_POST["password"])) {
+            $passwordError = "Password is required";
+        } else {
+            $password = ($_POST["password"]);
+            if (!preg_match("/^[0-9' ]*.{8,12}$/", $password)) {
+                $passwordError = "At least 8 digit needed";
+            }
+        }
+    }
+    ?>
 </body>
 
 </html>

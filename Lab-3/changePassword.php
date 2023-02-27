@@ -10,7 +10,7 @@
 
 <body>
     <center>
-        <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+        <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
             <fieldset>
                 <h1>Change Your Password</h1><br>
                 <table>
@@ -35,19 +35,42 @@
         </form>
     </center>
     <?php
-            if(isset($_POST["submit"]))
-            {
-                $user_name = $_POST["username"];
-                $user_password = $_POST["password"];
-                if(($user_name =="Username" && $$user_password == "123"))
-                {
-                    echo "";
-                }
-                else{
-                    echo "Incorrect Username and Password.";
-                }
+    $currentPasswordError = $newPasswordErr = $retypePasswordError = "";
+    $currentPassword = $newPassword = $retypePassword = "";
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        if (empty($_POST["currentPassword"])) {
+            $currentPasswordError = "current password is required";
+        } else {
+            $currentPassword = ($_POST["currentPassword"]);
+            if (!preg_match("/^[0-9' ]*.{8,12}$/", $currentPassword)) {
+                $currentPasswordError = "At least 8 digit needed";
             }
-            ?>
+        }
+    }
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        if (empty($_POST["newPassword"])) {
+            $newPasswordErr = "new password is required";
+        } else {
+            $newPassword = ($_POST["newPassword"]);
+            if (!preg_match("/^[0-9' ]*.{8,12}$/", $newPassword)) {
+                $newPasswordErr = "At least 8 digit needed";
+            }
+        }
+    }
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        if (empty($_POST["retypePassword"])) {
+            $retypePasswordError = "retype new password ";
+        } else {
+            $retypePassword = ($_POST["retypePassword"]);
+            if (!preg_match("/^[0-9' ]*.{8,12}$/", $newPassword)) {
+                $retypePasswordError = "At least 8 digit needed";
+            }
+        }
+    }
+    ?>
 </body>
 
 </html>
