@@ -35,6 +35,17 @@ Part-2 <br>
 <a href="https://github.com/sarjataziz/WebTech_Spring-2023/blob/ff8c75ff20a4a5d0eb56bdd97e53b71e5998b63d/Lab-3/changePassword.php">#View Code for Change Password</a> 
   
 <br/>  
+#### Lab-3:
+<img src="https://github.com/sarjataziz/WebTech_Spring-2023/blob/9979dd2a32ab934a55bc4e1cc3a3fe032251dc63/image/Lab-4/WelCome.PNG">
+<img src="https://github.com/sarjataziz/WebTech_Spring-2023/blob/9979dd2a32ab934a55bc4e1cc3a3fe032251dc63/image/Lab-4/Login.PNG">
+<img src="https://github.com/sarjataziz/WebTech_Spring-2023/blob/9979dd2a32ab934a55bc4e1cc3a3fe032251dc63/image/Lab-4/Dashboard.PNG">
+<img src="https://github.com/sarjataziz/WebTech_Spring-2023/blob/9979dd2a32ab934a55bc4e1cc3a3fe032251dc63/image/Lab-4/EditProfile.PNG">
+<a href="https://github.com/sarjataziz/WebTech_Spring-2023/blob/9979dd2a32ab934a55bc4e1cc3a3fe032251dc63/Lab-4/Dashboard.php">#View Code for Dashboard</a>  
+<a href="https://github.com/sarjataziz/WebTech_Spring-2023/blob/9979dd2a32ab934a55bc4e1cc3a3fe032251dc63/Lab-4/welcome.php">#View Code for Home Page</a> 
+<a href="https://github.com/sarjataziz/WebTech_Spring-2023/blob/9979dd2a32ab934a55bc4e1cc3a3fe032251dc63/Lab-4/login.php">#View Code for Login</a>  
+<a href="https://github.com/sarjataziz/WebTech_Spring-2023/blob/9979dd2a32ab934a55bc4e1cc3a3fe032251dc63/Lab-4/editProfile.php">#View Code for Change Password</a> 
+  
+<br/>  
 
 ## Author
 - [@sarjataziz](https://github.com/sarjataziz)
