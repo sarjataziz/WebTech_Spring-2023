@@ -28,5 +28,13 @@ Part-2 <br>
   
 <br/>  
 
+#### Lab-3:
+<img src="https://github.com/sarjataziz/WebTech_Spring-2023/blob/ff8c75ff20a4a5d0eb56bdd97e53b71e5998b63d/image/l-3/cp.PNG">
+<img src="https://github.com/sarjataziz/WebTech_Spring-2023/blob/ff8c75ff20a4a5d0eb56bdd97e53b71e5998b63d/image/l-3/lo.PNG">
+<a href="https://github.com/sarjataziz/WebTech_Spring-2023/blob/ff8c75ff20a4a5d0eb56bdd97e53b71e5998b63d/Lab-3/login.php">#View Code for Login</a>  
+<a href="https://github.com/sarjataziz/WebTech_Spring-2023/blob/ff8c75ff20a4a5d0eb56bdd97e53b71e5998b63d/Lab-3/changePassword.php">#View Code for Change Password</a> 
+  
+<br/>  
+
 ## Author
 - [@sarjataziz](https://github.com/sarjataziz)
