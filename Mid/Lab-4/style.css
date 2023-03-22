@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(169, 181, 192);
+    color: rgb(73, 119, 161);
+    font-size: medium;
+    text-align:center;
+}
+.center {
+    text-align: center;
+    border: 3px solid green;
+}
+form {
+    display: inline-block;
+}
+h1{
+    color: #0A2647;
+    text-align: center;
+    font-variant-position: normal;
+}
+h2{
+    color: #5497e4;
+    font-variant-position: normal;
+}
+
